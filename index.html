@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-img">
+                <a href="">
+                    <img src="image/car2.JPEG" alt="">
+                </a>
+            </div>
+            <ul>
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="profile.html">Our Profile</a>
+                </li>
+                <li>
+                    <a href="">Achievement</a>
+                </li>
+                <li>
+                    <a href="">Message Us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="jumbotron">
+            <div class="jumbotron-content">
+                <h2 id="welcome-message"></h2>
+                <p>ini adalah website our school</p>
+                <a href="profile.html">Our Profile</a>
+            </div>
+        </div>
+        <section class="facilitation">
+            <h2>Our Facilitation</h2>
+            <div class="facilitation-container">
+                <div class="facilitation-item">
+                    <div class="facilitation-image">
+                        <img src="image/professional-teacher.jpg" alt="Facility 1">
+                    </div>
+                    <p>Professional Teacher</p>
+                </div>
+                <div class="facilitation-item">
+                    <div class="facilitation-image">
+                        <img src="image/sport-field.jpg" alt="Facility 2">
+                    </div>
+                    <p>Sport Field</p>
+                </div>
+                <div class="facilitation-item">
+                    <div class="facilitation-image">
+                        <img src="image/classroom.jpg" alt="Facility 3">
+                    </div>
+                    <p>Classroom</p>
+                </div>
+            </div>
+        </section>
+        <section class="message-us">
+            <div class="form-container">
+                <h2>Message Us</h2>
+                <form id="message-form">
+                    <label for="name">Nama:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="dob">Tanggal Lahir:</label>
+                    <input type="date" id="dob" name="dob" required>
+                    
+                    <label for="gender">Jenis Kelamin:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="male">Laki-laki</option>
+                        <option value="female">Perempuan</option>
+                    </select>
+                    
+                    <label for="message">Pesan:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                    <button type="submit">Kirim</button>
+                </form>
+            </div>
+            <div class="preview-container">
+                <h2>Preview</h2>
+                <p><strong>Nama:</strong> <span id="preview-name"></span></p>
+                <p><strong>Tanggal Lahir:</strong> <span id="preview-dob"></span></p>
+                <p><strong>Jenis Kelamin:</strong> <span id="preview-gender"></span></p>
+                <p><strong>Pesan:</strong> <span id="preview-message"></span></p>
+            </div>
+        </section>
+    </main>
+    
+    <script src="js/script.js"></script>
+
+    <footer>
+        <p>&copy; 2024 Our School. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

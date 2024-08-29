@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+}
+
+.logo-img {
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+}
+
+.logo-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 50%;
+}
+
+header{
+    display: inline;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f8f8f8;
+    position: sticky;
+    top: 0;
+    border-bottom: 2px solid black;
+    z-index: 1000;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+ul li::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: -5px; 
+    background-color: #007BFF; 
+    transition: width 0.3s ease; 
+}
+
+ul li:hover::after {
+    width: 100%; 
+}
+
+ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.profile-header {
+    background-image: url('../image/school.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    
+}
+
+.profile-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.profile-header h1,
+.profile-header p {
+    position: relative;
+    z-index: 2;
+}
+
+.vision-mission {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+    
+}
+
+.vision, .mission {
+    margin-bottom: 70px;
+}
+
+.vision h2, .mission h2 {
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+.values {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.values h2{
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
